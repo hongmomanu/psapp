@@ -11,6 +11,7 @@ import DOM.HTML.Event.EventTypes (click)
 import Data.Foldable (for_)
 import Data.Foreign (readString)
 import Partial.Unsafe (unsafePartial)
+import Control.Monad.Eff.Timer as T
 
 main :: forall eff. Eff ( dom :: DOM
                         , console :: CONSOLE
